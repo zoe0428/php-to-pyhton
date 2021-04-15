@@ -39,14 +39,17 @@ def TestPlatform( ):
     print(platform.version())
 
     #  包含上面所有的信息汇总
-    print (platform.uname())
+    print(platform.uname())
 
 def UsePlatform( ):
     sysstr = platform.system()
     if(sysstr =="Windows"):
         print ("Call Windows tasks")
+        os.system('python install.py --os=win')
     elif(sysstr == "Linux"):
         print ("Call Linux tasks")
+        os.system('python install.py --os=linx')
+
     else:
         print ("Other System tasks")
 
