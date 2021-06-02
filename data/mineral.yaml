@@ -1,0 +1,6 @@
+train: ./data/train/images
+val: ./data/test/images
+test: ./data/test/images
+
+nc: 3
+names: ['building', 'mine', 'saltlake']
