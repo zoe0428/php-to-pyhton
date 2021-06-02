@@ -37,7 +37,8 @@ The entire database management system is implemented through the background mana
 1. You need to fill in the permissions of the database you need to modify in setting.py in SQLmange.
 2. Then generate the corresponding Class in the model
 3. Register the classes in the database in DBope's admin.py!
-[9c29229ce5c65c0c972028f2b70dd43](https://user-images.githubusercontent.com/64721544/120452620-e81aaa00-c3c4-11eb-8b0a-6adc05bfb058.png)
+![9c29229ce5c65c0c972028f2b70dd43](https://user-images.githubusercontent.com/64721544/120452928-2adc8200-c3c5-11eb-85cd-c0c96fdefab8.png)
+
 
 
 
