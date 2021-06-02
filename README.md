@@ -1,12 +1,18 @@
 # php-to-pyhton
-PHP to python project for OreFox
+PHP to python project for OreFo
 Development Process
-Carry out environmental testing and installation of necessary components---4/19/2021 \n
-Complete the server and client on the python side---4/22/2021 \n
+Carry out environmental testing and installation of necessary components---4/19/2021 
+
+Complete the server and client on the python side---4/22/2021 
+
 test on load---
+
 Complete the sDatabase management on the python side---5/22/2021
+
 Complete the Predction model build up ---5/22/2021
+
 Complete the test of predction model using mineral image ---1/6/2021
+
 Complete the Database management visualization ---1/6/2021
 
 
@@ -26,6 +32,14 @@ $ pip install -r requirements.txt
 
 Tutorials
 The entire database management system is implemented through the background management of the Django framework:
+
+
+1. You need to fill in the permissions of the database you need to modify in setting.py in SQLmange.
+2. Then generate the corresponding Class in the model
+3. Register the classes in the database in DBope's admin.py!
+[9c29229ce5c65c0c972028f2b70dd43](https://user-images.githubusercontent.com/64721544/120452620-e81aaa00-c3c4-11eb-8b0a-6adc05bfb058.png)
+
+
 
 $ cd SQLmange
 $ python manage.py runserver
