@@ -1,8 +1,8 @@
 # php-to-pyhton
 PHP to python project for OreFox
 Development Process
-Carry out environmental testing and installation of necessary components---4/19/2021
-Complete the server and client on the python side---4/22/2021
+Carry out environmental testing and installation of necessary components---4/19/2021 \n
+Complete the server and client on the python side---4/22/2021 \n
 test on load---
 Complete the sDatabase management on the python side---5/22/2021
 Complete the Predction model build up ---5/22/2021
