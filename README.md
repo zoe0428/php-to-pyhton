@@ -44,13 +44,14 @@ The entire database management system is implemented through the background mana
 
 $ cd SQLmange
 $ python manage.py runserver
-![image](https://user-images.githubusercontent.com/64721544/120441963-b64f1680-c3b7-11eb-8118-8f13e18da9e0.png)
+
 
 Run the server, add /admin after the domain name
 Username : zoe
 Password: 123456
 1.	Can add, delete, modify and check existing databases
 2.	You can manage user rights in the background. Increase access rights
+![image](https://user-images.githubusercontent.com/64721544/120441963-b64f1680-c3b7-11eb-8118-8f13e18da9e0.png)
  
 You can also associate the new database and table in DBope through Django.model
 For details, please see:
