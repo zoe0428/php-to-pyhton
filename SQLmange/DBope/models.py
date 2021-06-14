@@ -32,6 +32,8 @@ class CustBalance(models.Model):
     sn = models.IntegerField()
     create_time = models.DateTimeField(auto_now_add=True)
     amount = models.DecimalField(max_digits=5,decimal_places=2)
+    def __str__(self):
+        return str(self.custID)
 
 class Product(models.Model):
     code = models.CharField(max_length=16,unique=True)
@@ -48,13 +50,17 @@ class Result(models.Model):
 
     def user_directory_path(self, filename):
         # file will be uploaded to MEDIA_ROOT/user_<id>/<filename>
-        return 'user_{0}/{1}'.format(self.id, filename)
+        # return 'user_{0}/{1}'.format(self.id, filename)
+        return 'D:/php-to-pyhton/runs/test'
+
 
     prodID = models.ForeignKey(Product, on_delete=models.CASCADE)
     data = models.FileField(upload_to=user_directory_path)
     result = models.FileField(upload_to=user_directory_path)
     status = models.IntegerField()
     modify = models.DateTimeField(auto_now=True)
+    def __str__(self):
+        return str(self.prodID)
 
 
 class Order(models.Model):
@@ -66,6 +72,8 @@ class Order(models.Model):
     modify = models.DateTimeField(auto_now=True)
     finnish_time = models.DateTimeField()
     cost = models.DecimalField(max_digits=5,decimal_places=2)
+    def __str__(self):
+        return str(self.sn)
 
 
 class Detail(models.Model):
@@ -73,3 +81,5 @@ class Detail(models.Model):
     prodID = models.ForeignKey(Product, on_delete=models.CASCADE)
     resultID =models.ForeignKey(Result, on_delete=models.CASCADE)
     modify = models.DateTimeField(auto_now=True)
+    def __str__(self):
+        return str(self.orderID)
